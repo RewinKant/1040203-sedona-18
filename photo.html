@@ -6,15 +6,17 @@
   </head>
   <body>
     <header class="page-header">
-      <button class="page-header__nav--close">x</button>
-      <ul class="page-header__nav nav">
-        <li><a class="nav__item" href="index.html">Главная</a></li>
-        <li><a class="nav__item nav__item--active" href="">Фото и видео</a></li>
-        <li><a class="nav__item" href="form.html">Форма отзыва</a></li>
-        <li><a class="nav__item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-      </ul>
+      <div class="page-header__nav nav">
+        <ul class="nav__list">
+          <li><a class="nav__item nav__item--active">Главная</a></li>
+          <li><a class="nav__item" href="photo.html">Фото и видео</a></li>
+          <li><a class="nav__item" href="form.html">Форма отзыва</a></li>
+          <li><a class="nav__item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
+        <button class="nav__button nav__button--show">Открыть или закрыть меню</button>
+        <!-- Название для доступности, - далее будет скрыта, стилизация будет сделана при добавлении CSS-->
+      </div>
       <div class="page-header__logo logo">
-        <button class="page-header__nav--show">=</button>
         <a href="index.html"><img class="logo__main" src="" width="102" height="83" alt="City of Sedona"></a>
         <img class="logo__bottom" src="" width="460" height="350" alt="Sedona Welcome">
       </div>
@@ -26,40 +28,40 @@
         <h2 class="visualy-hidden">Фоторафии Седоны</h2>
         <ul class="photo__list">
           <li class="photo__item photo__item--main">
-            <img class="photo__img" src="" width="512" height="256" alt="Народные просторы">
+            <a><img class="photo__img" src="" width="512" height="256" alt="Народные просторы"></a>
             <div class="photo__wrapper">
               <div class="photo__info">
-                <h2 class="photo__img-title">Нардные просторы</h2>
+                <p class="photo__img-title">Нардные просторы</p>
                 <address class="photo__autor">Автор фото: Борис</address>
               </div>
               <a class="photo__like" href="#">1350</a>
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__img" src="" width="512" height="256" alt="Местная растительность">
+            <a><img class="photo__img" src="" width="512" height="256" alt="Местная растительность"></a>
             <div class="photo__wrapper">
               <div class="photo__info">
-                <h2 class="photo__img-title">Местная растительность</h2>
+                <p class="photo__img-title">Местная растительность</p>
                 <address class="photo__autor">Автор фото: Сергей</address>
               </div>
               <a class="photo__like" href="#">143</a>
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__img" src="" width="512" height="256" alt="Дорога на север">
+            <a><img class="photo__img" src="" width="512" height="256" alt="Дорога на север"></a>
             <div class="photo__wrapper">
               <div class="photo__info">
-                <h2 class="photo__img-title">Дорога на север</h2>
+                <p class="photo__img-title">Дорога на север</p>
                 <address class="photo__autor">Автор фото: Петр</address>
               </div>
               <a class="photo__like" href="#">96</a>
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__img" src="" width="512" height="256" alt="Мост дьявола">
+            <a><img class="photo__img" src="" width="512" height="256" alt="Мост дьявола"></a>
             <div class="photo__wrapper">
               <div class="photo__info">
-                <h2 class="photo__img-title">Мост дьявола</h2>
+                <p class="photo__img-title">Мост дьявола</p>
                 <address class="photo__autor">Автор фото: Антон</address>
               </div>
               <a class="photo__like" href="#">254</a>
@@ -87,7 +89,7 @@
           <a href="#">YouTube</a>
         </li>
       </ul>
-      <a class="page-footer__dev page-footer__dev--icon" href="">Рзаработано</a>
+      <a class="page-footer__dev page-footer__dev--icon" href="https://htmlacademy.ru/intensive/adaptive">Рзаработано</a>
     </footer>
   </body>
 </html>

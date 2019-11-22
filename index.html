@@ -6,16 +6,18 @@
   </head>
   <body>
     <header class="page-header">
-      <button class="page-header__nav--close">x</button>
-      <ul class="page-header__nav nav">
-        <li><a class="nav__item nav__item--active" href="">Главная</a></li>
-        <li><a class="nav__item" href="photo.html">Фото и видео</a></li>
-        <li><a class="nav__item" href="form.html">Форма отзыва</a></li>
-        <li><a class="nav__item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-      </ul>
+      <div class="page-header__nav nav">
+        <ul class="nav__list">
+          <li><a class="nav__item nav__item--active">Главная</a></li>
+          <li><a class="nav__item" href="photo.html">Фото и видео</a></li>
+          <li><a class="nav__item" href="form.html">Форма отзыва</a></li>
+          <li><a class="nav__item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
+        <button class="nav__button nav__button--show">Открыть или закрыть меню</button>
+        <!-- Название для доступности, - далее будет скрыта, стилизация будет сделана при добавлении CSS-->
+      </div>
       <div class="page-header__logo logo">
-        <button class="page-header__nav--show">=</button>
-        <img class="logo__main" src="" width="102" height="83" alt="City of Sedona">
+        <a><img class="logo__main" src="" width="102" height="83" alt="City of Sedona"></a>
         <img class="logo__bottom" src="" width="460" height="350" alt="Sedona Welcome">
       </div>
     </header>
@@ -85,7 +87,7 @@
           <a href="#">YouTube</a>
         </li>
       </ul>
-      <a class="page-footer__dev page-footer__dev--icon" href="">Рзаработано</a>
+      <a class="page-footer__dev page-footer__dev--icon" href="https://htmlacademy.ru/intensive/adaptive">Рзаработано</a>
     </footer>
   </body>
 </html>
