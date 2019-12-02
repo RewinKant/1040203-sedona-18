@@ -1,0 +1,72 @@
+.usability {
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 70px;
+
+  text-align: left;
+  list-style: none;
+
+  background-color: #ffffff;
+
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #333333;
+  }
+}
+
+.usability__item {
+  position: relative;
+
+  margin-bottom: 40px;
+
+  &-icon--house::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+
+    width: 37px;
+    height: 36px;
+
+    background-image: url(../img/icon-house.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-icon--burger::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+
+    width: 40px;
+    height: 35px;
+
+    background-image: url(../img/icon-burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-icon--box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+
+    width: 32px;
+    height: 38px;
+
+    background-image: url(../img/icon-gift.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
