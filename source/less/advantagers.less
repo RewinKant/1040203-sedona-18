@@ -1,25 +1,33 @@
 .advantagers {
   position: relative;
+  .font(center; uppercase);
+}
 
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-align: center;
-  text-transform: uppercase;
+.advantagers__header {
+  padding: 0 32px;
+}
 
-  &__header {
-    padding: 0 32px;
-  }
+.advantagers__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
 
-  &__title {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
-  }
+.advantagers__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #333333;
+  &::before {
+    position: absolute;
+    top: 50px;
+    left: calc(100% / 2);
 
-  &__text {
+    counter-increment: myCounter;
+    content:"— №"counter(myCounter)" —";
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
-    color: #333333;
   }
 }
 
@@ -70,17 +78,4 @@
 
 .advantagers__bottom-list {
   order: -1;
-}
-
-
-.advantagers__text::before {
-  position: absolute;
-  top: 50px;
-  left: calc(100% / 2);
-
-  counter-increment: myCounter;
-  content:"— №"counter(myCounter)" —";
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
 }

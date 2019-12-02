@@ -1,24 +1,22 @@
-body {
-  margin: 0;
-}
-@import "page-header.less";
-@import "page-footer.less";
-// pages site
-@import "page-main.less";
-@import "page-multimedia.less";
-@import "page-feedback.less";
-// fonts
-/*cyrillic PT Sans Regular, latin PT Sans Regular
-cyrillic PT Sans Bold, latin PT Sans Bold */
-@import "fonts.less";
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import "global.less";
+@import "mixin.less";
+// page-header
+@import "nav.less";
+@import "logo.less";
+// page footer
+@import "page-footer.less";
+@import "social.less";
+// pages site
+//    index.html
+@import "advantagers.less";
+@import "usability.less";
+@import "tour.less";
+//    photo.html
+@import "page-multimedia.less";
+@import "photo.less";
+//    form.html
+@import "page-feedback.less";
+@import "main-form.less";
+// fonts
+@import "fonts.less"; /* PT Sans Regular, PT Sans Bold */
