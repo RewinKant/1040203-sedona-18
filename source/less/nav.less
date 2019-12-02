@@ -14,6 +14,7 @@
   padding: 0;
 
   list-style: none;
+
   li {
     display: flex;
   }
@@ -27,9 +28,8 @@
   color: #ffffff;
 
   background-color: #81b3d2;
-  box-shadow:
-  inset 0px -1px 0 0 rgba(1, 1, 1, 0.2),
-  inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px -1px 0 0 rgba(1, 1, 1, 0.2),
+    inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
 
   &:hover {
     background-color: #669ec0;
@@ -51,14 +51,16 @@
 
   border: none;
   background-color: transparent;
+
   &--close {
     top: 16px;
 
-    background-image: url(../img/icon-cross.svg);
+    background-image: url("../img/icon-cross.svg");
   }
+
   &--show {
     bottom: -42px;
 
-    background-image: url(../img/icon-menu.svg);
+    background-image: url("../img/icon-menu.svg");
   }
 }
