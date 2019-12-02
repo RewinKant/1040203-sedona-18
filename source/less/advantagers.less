@@ -1,0 +1,85 @@
+.advantagers {
+  position: relative;
+  .font(center; uppercase);
+}
+
+.advantagers__header {
+  padding: 0 32px;
+}
+
+.advantagers__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.advantagers__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #333333;
+
+  &::before {
+    position: absolute;
+    top: 50px;
+    left: calc(100% / 2);
+
+    counter-increment: myCounter;
+    content: "— №" counter(myCounter) " —";
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+  }
+}
+
+.advantagers__header .advantagers__text {
+  line-height: 26px;
+}
+
+.advantagers__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  list-style: none;
+  counter-reset: myCounter;
+
+  background-color: #eeeeee;
+}
+
+.advantagers__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px 20px 0 20px;
+
+  background-color: #eeeeee;
+  border-bottom: 1px solid #d6d6d6;
+
+  &:first-child {
+    order: -2;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &--img { // переопределение карточки при наличии в ней изображения
+    margin: 0;
+
+    color: #ffffff;
+
+    background-color: #81b3d2;
+    border: none;
+
+    .advantagers__text { // переопределение цвета при наличии в карточке шзображения
+      color: #ffffff;
+    }
+  }
+}
+
+.advantagers__bottom-list {
+  order: -1;
+}

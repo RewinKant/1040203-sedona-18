@@ -3,32 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona Photo & Video</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__nav nav">
         <ul class="nav__list">
-          <li><a class="nav__item nav__item--active">Главная</a></li>
-          <li><a class="nav__item" href="photo.html">Фото и видео</a></li>
+          <li><a class="nav__item" href="index.html">Главная</a></li>
+          <li><a class="nav__item nav__item--active">Фото и видео</a></li>
           <li><a class="nav__item" href="form.html">Форма отзыва</a></li>
           <li><a class="nav__item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
-        <button class="nav__button nav__button--show">Открыть или закрыть меню</button>
-        <!-- Название для доступности, - далее будет скрыта, стилизация будет сделана при добавлении CSS-->
+        <button class="nav__button nav__button--close"></button>
       </div>
       <div class="page-header__logo logo">
-        <a href="index.html"><img class="logo__main" src="" width="102" height="83" alt="City of Sedona"></a>
-        <img class="logo__bottom" src="" width="460" height="350" alt="Sedona Welcome">
+        <a><img class="logo__main" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona"></a>
       </div>
     </header>
     <main class="page-multimedia">
-      <h1 class="page-multimedia__title">Фото и видео</h1>
-      <p class="page-multimedia__text">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике.</p>
+      <div class="page-multimedia__wrapper">
+        <h1 class="page-multimedia__title">Фото и видео</h1>
+        <p class="page-multimedia__text">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам&nbsp;забыть о политике и экономике.</p>
+      </div>
       <section class="page-multimedia__photo photo">
-        <h2 class="visualy-hidden">Фоторафии Седоны</h2>
+        <h2 class="visually-hidden">Фоторафии Седоны</h2>
         <ul class="photo__list">
           <li class="photo__item photo__item--main">
-            <a href=""><img class="photo__img" src="" width="512" height="256" alt="Народные просторы"></a>
+            <a href=""><img class="photo__img" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Народные просторы"></a>
             <div class="photo__wrapper">
               <div class="photo__info">
                 <p class="photo__img-title">Нардные просторы</p>
@@ -38,7 +40,7 @@
             </div>
           </li>
           <li class="photo__item">
-            <a href=""><img class="photo__img" src="" width="512" height="256" alt="Местная растительность"></a>
+            <a href=""><img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность"></a>
             <div class="photo__wrapper">
               <div class="photo__info">
                 <p class="photo__img-title">Местная растительность</p>
@@ -48,7 +50,7 @@
             </div>
           </li>
           <li class="photo__item">
-            <a href=""><img class="photo__img" src="" width="512" height="256" alt="Дорога на север"></a>
+            <a href=""><img class="photo__img" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север"></a>
             <div class="photo__wrapper">
               <div class="photo__info">
                 <p class="photo__img-title">Дорога на север</p>
@@ -58,7 +60,7 @@
             </div>
           </li>
           <li class="photo__item">
-            <a href=""><img class="photo__img" src="" width="512" height="256" alt="Мост дьявола"></a>
+            <a href=""><img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола"></a>
             <div class="photo__wrapper">
               <div class="photo__info">
                 <p class="photo__img-title">Мост дьявола</p>
@@ -70,10 +72,12 @@
         </ul>
       </section>
       <section class="page-multimedia__video">
-        <h2 class="visualy-hidden">Видео о Седоне</h2>
-        <b class="page-multimedia__title">Все еще сомневаетесь?</b>
-        <p class="page-multimedia__text">Смотрите видеопрезентаци и скорее за билетами, пока они не подоражали в очередной раз!</p>
-        <video class="page-multimedia__vid" src="" poster="" controls="controls" alt="Видео о Седоне">Видео</video>
+        <h2 class="visually-hidden">Видео о Седоне</h2>
+        <div class="page-multimedia__wrapper">
+          <b class="page-multimedia__title">Все еще сомневаетесь?</b>
+          <p class="page-multimedia__text">Смотрите видеопрезентаци и скорее&nbsp;за билетами, пока они не подоражали в очередной раз!</p>
+        </div>
+        <video class="page-multimedia__vid" poster="img/video-mobile@1x.jpg" controls="controls">Видео</video>
       </section>
     </main>
     <footer class="page-footer">
@@ -89,7 +93,7 @@
           <a href="#">YouTube</a>
         </li>
       </ul>
-      <a class="page-footer__dev page-footer__dev--icon" href="https://htmlacademy.ru/intensive/adaptive">Рзаработано</a>
+      <a class="page-footer__dev page-footer__dev--icon" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </footer>
   </body>
 </html>

@@ -3,44 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__nav nav">
         <ul class="nav__list">
-          <li><a class="nav__item nav__item--active">Главная</a></li>
+          <li><a class="nav__item" href="index.html">Главная</a></li>
           <li><a class="nav__item" href="photo.html">Фото и видео</a></li>
-          <li><a class="nav__item" href="form.html">Форма отзыва</a></li>
+          <li><a class="nav__item nav__item--active">Форма отзыва</a></li>
           <li><a class="nav__item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
-        <button class="nav__button nav__button--show">Открыть или закрыть меню</button>
-        <!-- Название для доступности, - далее будет скрыта, стилизация будет сделана при добавлении CSS-->
+        <button class="nav__button nav__button--close"></button>
       </div>
       <div class="page-header__logo logo">
-        <a href="index.html"><img class="logo__main" src="" width="102" height="83" alt="City of Sedona"></a>
-        <img class="logo__bottom" src="" width="460" height="350" alt="Sedona Welcome">
+        <a><img class="logo__main" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona"></a>
       </div>
     </header>
     <main class="page-feedback">
-      <h1 class="page-feedback__title">Фото и видео</h1>
-      <p class="page-feedback__text">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике.</p>
+      <div class="page-feedback__wrapper">
+        <h1 class="page-feedback__title">Оставьте свой отзыв</h1>
+        <p class="page-feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещанных Вами достопримечательностях</p>
+      </div>
       <form class="page-feedback__form main-form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="main-form__list">
-          <legend class="main-form__title">Ваше общее впечатление:</legend>
-          <label class="main-form__user-text main-form__radio"><input type="radio" name="impress" value="1">Скорее положительное</label>
-          <label class="main-form__user-text main-form__radio"><input type="radio" name="impress" value="-1">Скорее отрицательное</label>
-          <label class="main-form__user-text main-form__radio"><input type="radio" name="impress" value="0">Затрудняюсь ответить</label>
-        </fieldset>
-        <fieldset class="main-form__list">
           <legend class="main-form__title">Представтесь</legend>
-          <label class="main-form__form-text">Имя*:<input class="main-form__input" type="text" name="user-name" placeholder="Петр"></label>
-          <label class="main-form__form-text">Фамилия*:<input class="main-form__input" type="text" name="user-surname" placeholder="Иванов"></label>
-          <label class="main-form__form-text">Отчество:<input class="main-form__input" type="text" name="user-lastname" placeholder="Александрович"></label>
+          <label class="main-form__form-text">Имя*: <input class="main-form__input" type="text" name="user-name" placeholder="Петр"></label>
+          <label class="main-form__form-text">Фамилия*: <input class="main-form__input" type="text" name="user-surname" placeholder="Иванов"></label>
+          <label class="main-form__form-text">Отчество: <input class="main-form__input" type="text" name="user-lastname" placeholder="Александрович"></label>
         </fieldset>
         <fieldset class="main-form__list">
           <legend class="main-form__title">Контактная информация:</legend>
           <label class="main-form__form-text">Телефон*:<input class="main-form__input main-form__input--phone" type="text" name="user-tel" placeholder="Введите телефон"></label>
           <label class="main-form__form-text">Электронная почта*:<input class="main-form__input main-form__input--massage" type="text" name="user-mail" placeholder="Введите e-mail"></label>
+        </fieldset>
+        <fieldset class="main-form__list">
+          <legend class="main-form__title">Ваше общее впечатление:</legend>
+          <label class="main-form__user-text main-form__radio"><input type="radio" name="impress" value="1">Скорее положительное</label>
+          <label class="main-form__user-text main-form__radio"><input type="radio" name="impress" value="-1">Скорее отрицательное</label>
+          <label class="main-form__user-text main-form__radio"><input type="radio" name="impress" value="0">Затрудняюсь ответить</label>
         </fieldset>
         <fieldset class="main-form__list">
           <legend class="main-form__title">Посещенные достопремечательности:</legend>
@@ -51,10 +53,10 @@
         </fieldset>
         <fieldset class="main-form__list">
           <legend class="main-form__title">Опишите свои эмоции:</legend>
-          <textarea class="main-form__user-text main-form__textarea" name="user-feedback" rows="8" cols="80" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="main-form__textarea" name="user-feedback" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <div class="main-form__wrapper">
-          <button class="main-form__buttom" type="submit">Отправить отзыв</button>
+          <button class="main-form__button" type="submit">Отправить отзыв</button>
           <p class="main-form__help">* - Обязательные поля</p>
         </div>
       </form>
@@ -72,7 +74,7 @@
           <a href="#">YouTube</a>
         </li>
       </ul>
-      <a class="page-footer__dev page-footer__dev--icon" href="https://htmlacademy.ru/intensive/adaptive">Рзаработано</a>
+      <a class="page-footer__dev page-footer__dev--icon" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </footer>
   </body>
 </html>
