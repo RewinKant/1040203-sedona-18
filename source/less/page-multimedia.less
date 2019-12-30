@@ -3,10 +3,12 @@
 }
 
 .page-multimedia__wrapper {
-  margin: 20px;
+  margin: 39px 5% 27px;
 }
 
 .page-multimedia__title {
+  margin: 26px;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -14,7 +16,33 @@
 
 .page-multimedia__text {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 24px;
   font-weight: normal;
   color: #333333;
+}
+
+@media (min-width: 768px) {
+  .page-multimedia {
+    margin-bottom: 42px;
+  }
+
+  .page-multimedia__wrapper {
+    margin: 75px 21% 45px;
+  }
+
+  .page-multimedia__title {
+    margin: 31px;
+
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-multimedia {
+    margin-bottom: 7.5%;
+  }
+
+  .page-multimedia__wrapper {
+    margin: 9.4% 32% 4%;
+  }
 }

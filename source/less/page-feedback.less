@@ -2,11 +2,17 @@
   .font(center; uppercase);
 }
 
+.page-feedback__form {
+  padding-bottom: 2px;
+}
+
 .page-feedback__wrapper {
-  margin: 20px 20px 20px 20px;
+  margin: 12.2% 3% 5.2%;
 }
 
 .page-feedback__title {
+  margin-bottom: 8.7%;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -17,4 +23,27 @@
   line-height: 24px;
   font-weight: normal;
   color: #333333;
+}
+
+@media (min-width: 768px) {
+  .page-feedback__title {
+    margin-bottom: 7%;
+
+    font-size: 30px;
+  }
+
+  .page-feedback__wrapper {
+    margin: 75px auto 74px;
+    width: 439px;
+  }
+
+  .page-feedback__form {
+    padding: 0 7.81%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-feedback__wrapper {
+    margin: 113px auto 59px;
+  }
 }
