@@ -1,3 +1,74 @@
 .social {
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+  padding: 0;
+}
+
+.social__wrapper {
+  display: flex;
+  margin-right: 6px;
+  list-style: none;
+  background-color: #81b3d2;
+}
+
+.social__item {
+  content: "";
+  width: 46px;
+  height: 48px;
+
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--fb {
+    background-image: url("../img/icon-facebook.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__developer {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.page-footer__htmlacademy {
+  padding-left: 10px;
+  width: 40px;
+  height: 55px;
+
+  fill: #000000;
+}
+
+@media (min-width: 768px) {
+  .social {
+    margin: 0;
+  }
+
+  .social__wrapper {
+    margin: 3px;
+  }
 }
