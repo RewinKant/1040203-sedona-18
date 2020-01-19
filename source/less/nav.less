@@ -52,8 +52,8 @@
   .nav__button {
     position: absolute;
     z-index: 2;
-    right: 6%;
-    top: 14px;
+    right: 7%;
+    top: 17px;
 
     padding: 0;
     width: 23px;
@@ -64,15 +64,18 @@
     cursor: pointer;
   }
 
-  .nav--show .nav__button {
-    background-image: url("../img/icon-cross.svg");
+  .nav__icon {
+    display: none;
+    width: 23px;
+    height: 22px;
   }
 
-  .nav--close .nav__button {
-    position: absolute;
-    top: 16px;
+  .nav--show .nav__icon--close {
+      display: block;
+  }
 
-    background-image: url("../img/icon-menu.svg");
+  .nav--close .nav__icon--show {
+    display: block;
   }
 }
 

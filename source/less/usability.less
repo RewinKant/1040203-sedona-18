@@ -1,5 +1,5 @@
 .usability {
-  padding-top: 19px;
+  padding-top: 20px;
   padding-right: 30px;
   padding-bottom: 10px;
   padding-left: 68px;
@@ -11,6 +11,8 @@
 }
 
 .usability__title {
+  margin: 16px 0 12px;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -30,7 +32,7 @@
 
   margin-bottom: 27px;
 
-  &--icon-house::before {
+  &--icon-house {
     content: "";
     position: absolute;
     top: -9px;
@@ -38,13 +40,9 @@
 
     width: 37px;
     height: 36px;
-
-    background-image: url("../img/icon-house.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
-  &--icon-burger::before {
+  &--icon-burger {
     content: "";
     position: absolute;
     top: -5px;
@@ -52,13 +50,9 @@
 
     width: 40px;
     height: 35px;
-
-    background-image: url("../img/icon-burger.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
-  &--icon-box::before {
+  &--icon-box {
     content: "";
     position: absolute;
     top: -11px;
@@ -66,10 +60,6 @@
 
     width: 32px;
     height: 38px;
-
-    background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 }
 
@@ -94,11 +84,11 @@
     width: 33.33%;
     margin: 0;
 
-    &--icon-box {
+    &--last {
       order: 1;
     }
 
-    &--icon-house::before {
+    &--icon-house {
       top: 60px;
       left: calc(50% - 36px);
 
@@ -106,7 +96,7 @@
       height: 72px;
     }
 
-    &--icon-burger::before {
+    &--icon-burger {
       top: 64px;
       left: calc(50% - 37px);
 
@@ -114,7 +104,7 @@
       height: 68px;
     }
 
-    &--icon-box::before {
+    &--icon-box {
       top: 58px;
       left: calc(50% - 32px);
 
