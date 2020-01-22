@@ -3,3 +3,30 @@
   text-align: @text-align;
   text-transform: @text-transform;
 }
+
+@thumb-color: rgba(255, 255, 255, 1);
+@thumb-radius: 50%;
+@thumb-height: 9px;
+@thumb-width: 9px;
+
+@track-color: rgba(255, 255, 255, 0.3);
+@track-width: 100%;
+@track-height: 3px;
+@track-radius: 5px;
+
+@contrast: 5%;
+
+.track() {
+  width: @track-width;
+  height: @track-height;
+  cursor: pointer;
+  animate: 0.2s;
+}
+
+.thumb() {
+  height: @thumb-height;
+  width: @thumb-width;
+  border-radius: @thumb-radius;
+  background: @thumb-color;
+  cursor: pointer;
+}

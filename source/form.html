@@ -18,7 +18,14 @@
           <li><a class="nav__item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
         <div class="nav__wrapper">
-          <button class="nav__button nav__button--show"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="nav__button" aria-label="Открыть меню">
+            <svg class="nav__icon nav__icon--close" aria-hidden="true" focusable="false">
+              <use xlink:href="#icon-cross"></use>
+            </svg>
+            <svg class="nav__icon nav__icon--show" aria-hidden="true" focusable="false">
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+          </button>
         </div>
       </div>
       <div class="page-header__logo logo">
@@ -48,13 +55,27 @@
         </div>
         <div class="main-form__list main-form__list--contacts">
           <h2 class="main-form__title">Контактная информация:</h2>
-          <div class="main-form__wrapper main-form__wrapper--phone">
+          <div class="main-form__wrapper ">
             <label class="main-form__form-text" for="user-tel"><span class="main-form--desktop-visually-hidden">Контактный</span> телефон*:</label>
-            <input class="main-form__input" type="text" name="user-tel" placeholder="Введите телефон">
+            <div class="main-form__input-wrap">
+              <input class="main-form__input" type="text" name="user-tel" placeholder="Введите телефон">
+              <div class="main-form__icon ">
+                <svg class="main-form__icon--phone" aria-hidden="true" focusable="false" viewBox="0 0 18 18">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
           </div>
-          <div class="main-form__wrapper main-form__wrapper--massage">
+          <div class="main-form__wrapper">
             <label class="main-form__form-text" for="user-mail">Электронная почта*:</label>
-            <input class="main-form__input" type="text" name="user-mail" placeholder="Введите e-mail">
+            <div class="main-form__input-wrap">
+              <input class="main-form__input" type="text" name="user-mail" placeholder="Введите e-mail">
+              <div class="main-form__icon ">
+                <svg class="main-form__icon--massage" aria-hidden="true" focusable="false" viewBox="0 0 16 16">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
         <div class="main-form__list main-form__list--main-impress">
@@ -88,18 +109,33 @@
           <p class="main-form__help">* - Обязательные поля</p>
         </div>
       </form>
+      <div class="page-feedback__error-form error-form">
+
+      </div>
     </main>
     <footer class="page-footer">
       <h2 class="page-footer__title">#visitsedona</h2>
       <ul class="page-footer__social-list social">
         <li class="social__wrapper">
-          <a class="social__item social__item--twitter" href="#"><span class="visually-hidden">twitter</span></a>
+          <a class="social__item" href="#" aria-label="twitter">
+            <svg class="social__icon" aria-hidden="true" focusable="false" viewBox="0 0 17.5 14.663">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__wrapper">
-          <a class="social__item social__item--fb" href="#"><span class="visually-hidden">facebook</span></a>
+          <a class="social__item" href="#" aria-label="facebook">
+            <svg class="social__icon" aria-hidden="true" focusable="false" viewBox="0 0 8.672 18.944">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__wrapper">
-          <a class="social__item social__item--youtube" href="#"><span class="visually-hidden">youtube</span></a>
+          <a class="social__item" href="#" aria-label="youtube">
+            <svg class="social__icon" aria-hidden="true" focusable="false" viewBox="0 0 19.979 14.015">
+              <use xlink:href="#icon-youtube"></use>
+            </svg>
+          </a>
         </li>
       </ul>
       <a class="page-footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
@@ -112,6 +148,6 @@
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <script type="text/javascript" src="js/mobile.js"></script>
+    <script type="text/javascript" src="js/mobile.min.js"></script>
   </body>
 </html>

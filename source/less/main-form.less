@@ -181,36 +181,29 @@ input:focus + .main-form__user-text {
     align-items: flex-start;
     margin: 0;
   }
+}
 
-  &--phone::before {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
+.main-form__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
 
-    width: 58px;
-    height: 58px;
-
-    background-color: #e6e6e6;
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  &--phone {
+    width: 18px;
+    height: 18px;
   }
 
-  &--massage::before {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
-
-    width: 58px;
-    height: 58px;
-
-    background-color: #e6e6e6;
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  &--massage {
+    width: 18px;
+    height: 18px;
   }
+}
+
+.main-form__input-wrap{
+  display: flex;
 }
 
 .main-form__list--contacts .main-form__wrapper {

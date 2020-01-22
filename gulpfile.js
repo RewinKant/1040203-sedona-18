@@ -40,9 +40,9 @@ gulp.task("css", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(csso())
+    // .pipe(csso())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css", { sourcemaps: '.' }))
+    .pipe(gulp.dest("build/css", { sourcemaps: "." }))
     .pipe(server.stream());
 });
 
