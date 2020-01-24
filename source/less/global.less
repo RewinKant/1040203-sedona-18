@@ -12,3 +12,31 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {
+  box-sizing: border-box;
+  padding: 16px;
+
+  .font(auto; uppercase);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+  border: none;
+
+  &:hover{
+    background-color: #669ec0;
+  }
+
+  &:active{
+    background-color: #5496bd;
+    color: rgba(225, 225, 225, 0.3);
+  }
+
+  &[disabled]{
+    background-color: #e5e5e5;
+    border: 2px solid #81b3d2;
+  }
+}
