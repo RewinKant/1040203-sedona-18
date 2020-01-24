@@ -204,6 +204,7 @@ input:focus + .main-form__user-text {
 
 .main-form__input-wrap {
   display: flex;
+  flex-grow: 1;
 }
 
 .main-form__list--contacts .main-form__wrapper {
@@ -293,7 +294,7 @@ input:focus + .main-form__user-text {
     }
 
     &--main-impress {
-      flex-basis: 50%;
+      flex-basis: 40%;
       padding: 0;
       order: -1;
 
@@ -377,10 +378,6 @@ input:focus + .main-form__user-text {
     .visually-hidden();
   }
 
-  .page-feedback__form {
-    padding: 0 10.2%;
-  }
-
   .main-form__list {
     &--user {
       padding: 0 0 0 80px;
@@ -398,6 +395,7 @@ input:focus + .main-form__user-text {
   }
 
   .main-form__list--contacts .main-form__form-text {
+    flex-shrink: 0;
     margin: 0 4% 0 0;
   }
 
@@ -437,5 +435,9 @@ input:focus + .main-form__user-text {
 
   .main-form__button {
     width: 480px;
+  }
+
+  .main-form__input[name="user-tel"] + .main-form__icon {
+    margin-right: 50px;
   }
 }

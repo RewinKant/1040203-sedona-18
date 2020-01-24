@@ -17,6 +17,9 @@ var errorButton = errorForm.querySelector(".page-feedback__error-button");
 var isStorageSupport = true;
 var storage = "";
 
+var validMail = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+ @[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61} [a-zA-Z0-9])?(?:\.[a-zA-Z0-9] (?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)* $/;
+var validTel = /^((\+7|7|8)+([0-9]){10})$/;
+
 try {
   storage = localStorage.getItem("userName");
 } catch (err) {
@@ -34,12 +37,12 @@ completeButton.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!userName.value || !userSurname.value || !userTel.value || !userMail.value) {
+  if (!userName.value || !userSurname.value || !(validTel.test(userTel.value)) || !(validMail.test(userMail.value))) {
     evt.preventDefault();
     if(!userName.value) {userName.classList.add("main-form__error");} else {userName.classList.remove("main-form__error");};
     if(!userSurname.value) {userSurname.classList.add("main-form__error");} else {userSurname.classList.remove("main-form__error");};
-    if(!userTel.value) {userTel.classList.add("main-form__error");} else {userTel.classList.remove("main-form__error");};
-    if(!userMail.value) {userMail.classList.add("main-form__error");} else {userMail.classList.remove("main-form__error");};
+    if(!(validTel.test(userTel.value))) {userTel.classList.add("main-form__error");} else {userTel.classList.remove("main-form__error");};
+    if(!(validMail.test(userMail.value))) {userMail.classList.add("main-form__error");} else {userMail.classList.remove("main-form__error");};
     errorForm.classList.add("page-feedback__popup--show");
   } else {
     if (isStorageSupport) {
