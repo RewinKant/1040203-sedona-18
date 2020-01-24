@@ -219,21 +219,15 @@ input:focus + .main-form__user-text {
 
 .main-form__button {
   margin: 29px auto;
-  padding: 16px;
   width: 280px;
-
-  .font(auto; uppercase);
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #ffffff;
-
-  background-color: #81b3d2;
-  border: none;
 }
 
 .main-form__help {
   display: none;
+}
+
+.main-form__error{
+  border: 1px solid red;
 }
 
 @media (min-width: 768px) {
@@ -261,7 +255,7 @@ input:focus + .main-form__user-text {
       width: 18.98%;
       height: 1px;
 
-      background-color: red;
+      background-color: #dbdbdb;
     }
 
     &::after {
@@ -270,7 +264,7 @@ input:focus + .main-form__user-text {
       width: 18.98%;
       height: 1px;
 
-      background-color: red;
+      background-color: #dbdbdb;
     }
   }
 
