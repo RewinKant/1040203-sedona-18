@@ -16,7 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin")
-var jsmin = require('gulp-uglify');
+var jsmin = require("gulp-uglify");
 
 gulp.task("css-old", function () {
   return gulp.src("source/less/style.less")
@@ -53,7 +53,11 @@ gulp.task("images", function() {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({progressive: true}),
-      imagemin.svgo()
+      imagemin.svgo({
+				plugins: [
+					{removeViewBox: false}
+				]
+			})
     ]))
     .pipe(gulp.dest("build/img"));
 });

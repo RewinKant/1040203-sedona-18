@@ -25,6 +25,7 @@
 
 .video__vid {
   display: block;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -32,22 +33,24 @@
   position: relative;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
-  margin: 0 6.5% 75px;
+  // width: 87%;
+  margin: 0 6.5% 46px;
 
   background-color: #f2f2f2;
 }
 
 .video__tools-item {
-  // content: "";
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 66px;
+  width: 60px;
   height: 66px;
 
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 
   &:nth-child(1) {
     margin-right: auto;
@@ -71,11 +74,22 @@
     width: 20px;
     height: 20px;
   }
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #b8b8b8;
+  }
 }
 
 .video__range {
-  -webkit-appearance: none;
+  appearance: none;
   width: @track-width;
+  padding: 0;
+  margin: 0;
+
   background-color: transparent;
 
   &::-webkit-slider-runnable-track {
@@ -85,8 +99,8 @@
   }
 
   &::-webkit-slider-thumb {
+    appearance: none;
     .thumb();
-    -webkit-appearance: none;
     margin-top: ((@track-height) / 2) - (@thumb-height / 2);
   }
 
@@ -138,8 +152,11 @@
 .video__progres {
   position: absolute;
   top: -45px;
+  left: 1px;
 
   display: flex;
+  flex-direction: row;
+
   box-sizing: border-box;
   width: 100%;
   height: 45px;
@@ -162,10 +179,8 @@
   }
 
   .video__vid {
-    // display: block;
     width: 84.38%;
     height: 500px;
-    // margin: 0 auto;
   }
 
   .video__tools {
@@ -175,7 +190,7 @@
 
     width: 84.38%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px 0 13px;
     box-sizing: border-box;
 
 
@@ -186,14 +201,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90px;
+    width: 82px;
     height: 94px;
 
     cursor: pointer;
 
     &:nth-child(1) {
       margin-left: auto;
-      margin-right: -27px;
+      margin-right: 0;
     }
   }
 
@@ -207,6 +222,14 @@
 
   .video__tools-icon {
     fill: #ffffff;
+
+    &:hover {
+      fill: rgba(225, 225, 225, 0.6);
+    }
+
+    &:active {
+      fill: rgba(225, 225, 225, 0.3);
+    }
   }
 }
 
@@ -227,5 +250,9 @@
 
   .video__vid {
     width: 66.38%;
+  }
+
+  .video__tools-item {
+    width: 75px;
   }
 }
